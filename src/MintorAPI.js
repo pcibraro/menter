@@ -105,7 +105,7 @@ function getMatches(data, id) {
 function ignoreMatch(data, id, mentor_mentee, mid) {
     mentor_mentee = mentor_mentee === MENTOR ? MENTOR : MENTEE;
     let profile = getOrCreateProfile(data, id);
-    delete profiled[mentor_mentee]["matches"][mid];
+    delete profile[mentor_mentee]["matches"][mid];
     return getMatches(data, id);
 }
 
