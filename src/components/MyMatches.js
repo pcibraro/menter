@@ -12,9 +12,15 @@ const Mymatches = () => {
 
   return (
     <Fragment>
-      <h2>{user.name}</h2>
-      <p>{user.email}</p>
-      <code>{JSON.stringify(user, null, 2)}</code>
+      <h2>My Mentors</h2>
+      <p>John Snow</p>
+      <p>Sansa Stark</p>
+      <p>Tormund Giantsbane</p>
+      <h2>My Mentees</h2>
+      <p>Grey Worm</p>
+      <p>Missandei</p>
+      <p>Little Finger</p>
+      
     </Fragment>
   );
 };

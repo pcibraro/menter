@@ -16,12 +16,12 @@ const Profile = () => {
 
   return (
     <Fragment>
-      <img src={user.picture} alt="Profile" />
+      >
 
-      <h2>{user.name}</h2>
-      <p>Email: {user.email}</p>
-      <p>Department: {profile.department}</p>
-      <p>Skills: {profile.skills}</p>
+      <h2>Kalisi</h2>
+      <p>Email: kalisi@jmfamily.com</p>
+      <p>Department: SET</p>
+      <p>Skills: Good at dragon riding , administartion, etc</p>
       
     </Fragment>
   );

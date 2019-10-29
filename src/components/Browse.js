@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import { useAuth0 } from "../react-auth0-spa";
 import MintorAPI from "../MintorAPI";
 
+
+
 const Profile = () => {
   const { loading, user } = useAuth0();
 
@@ -17,11 +19,36 @@ const Profile = () => {
 
   return (
     <Fragment>
-      <h2>{user.name}</h2>
-      <p>Email: {user.email}</p>
-      <p>Department: {profile.department}</p>
-      <p>Skills: {profile.skills}</p>
-    </Fragment>
+      <h2>John Snow</h2>
+      <p>Email: Johnsnow@jmfamily.com</p>
+      <p>Department: JMA</p>
+      <p>Skills: ASP.NET, Devops</p>
+
+      <h2>Kalisi</h2>
+      <p>Email: kalisi@jmfamily.com</p>
+      <p>Department: SET</p>
+      <p>Skills: Good at dragon riding , administartion, etc</p>
+
+      <li>
+          <label>
+            <input
+              type="radio"
+              value="Like"
+            />
+            Like
+          </label>
+        </li>
+
+        <li>
+          <label>
+            <input
+              type="radio"
+              value="Dislike"
+            />
+            Dislike
+          </label>
+        </li>
+   </Fragment>
   );
 };
 

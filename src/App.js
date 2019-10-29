@@ -8,6 +8,8 @@ import PrivateRoute from "./components/PrivateRoute";
 import Settings from "./components/Settings";
 import MyMatches from "./components/MyMatches";
 import Browse from "./components/Browse";
+import Home from "./components/Home";
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
           <PrivateRoute path="/Settings" component={Settings} />
           <PrivateRoute path="/MyMatches" component={MyMatches} />
           <PrivateRoute path="/Browse" component={Browse} />
+          <PrivateRoute path="/Home" component={Home} />
         </Switch>
       </BrowserRouter>
     </div>
