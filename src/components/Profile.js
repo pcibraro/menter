@@ -20,7 +20,7 @@ const Profile = () => {
 
       <h2>{user.name}</h2>
       <p>Email: {user.email}</p>
-      <p>Departament: {profile.department}</p>
+      <p>Department: {profile.department}</p>
       <p>Skills: {profile.skills}</p>
       
     </Fragment>

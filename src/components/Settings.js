@@ -11,11 +11,30 @@ const Settings = () => {
   
     return (
       <Fragment>
+        <h2>Looking For</h2>
+        <li>
+          <label>
+            <input
+              type="radio"
+              value="mentor"
+            />
+            Mentor
+          </label>
+        </li>
+        <li>
+          <label>
+            <input
+              type="radio"
+              value="mentee"
+            />
+            Mentee
+          </label>
+        </li>
         
-        <div className="Settings"></div>
-        <h2>{user.name}</h2>
-        <p>{user.email}</p>
-        <code>{JSON.stringify(user, null, 2)}</code>
+            <h2>Skills and Aspirations</h2>
+          
+        
+        
       </Fragment>
     );
   };

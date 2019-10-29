@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { useAuth0 } from "../react-auth0-spa";
+import MintorAPI from "../MintorAPI";
 
 const Profile = () => {
   const { loading, user } = useAuth0();
@@ -10,11 +11,16 @@ const Profile = () => {
     );
   }
 
+  const api = new MintorAPI();
+
+  const profile =  api.getProfile(user.user_id);
+
   return (
     <Fragment>
       <h2>{user.name}</h2>
-      <p>{user.email}</p>
-      <code>{JSON.stringify(user, null, 2)}</code>
+      <p>Email: {user.email}</p>
+      <p>Department: {profile.department}</p>
+      <p>Skills: {profile.skills}</p>
     </Fragment>
   );
 };
