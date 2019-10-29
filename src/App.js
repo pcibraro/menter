@@ -5,6 +5,9 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Profile from "./components/Profile";
 import PrivateRoute from "./components/PrivateRoute";
+import Settings from "./components/Settings";
+import MyMatches from "./components/MyMatches";
+import Browse from "./components/Browse";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Switch>
           <Route path="/" exact />
           <PrivateRoute path="/profile" component={Profile} />
+          <PrivateRoute path="/Settings" component={Settings} />
+          <PrivateRoute path="/MyMatches" component={MyMatches} />
+          <PrivateRoute path="/Browse" component={Browse} />
         </Switch>
       </BrowserRouter>
     </div>
