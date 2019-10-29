@@ -16,7 +16,7 @@ function App() {
         </header>
         <Switch>
           <Route path="/" exact />
-          <PrivateRoute path="/profile" component={Profile} />
+          <Route path="/profile" component={Profile} />
         </Switch>
       </BrowserRouter>
     </div>
